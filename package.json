@@ -1,0 +1,24 @@
+{
+  "name": "WhatsAppOpenChatWithoutContact",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bernardoow/WhatsAppOpenChatWithoutContact.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bernardoow/WhatsAppOpenChatWithoutContact/issues"
+  },
+  "homepage": "https://github.com/Bernardoow/WhatsAppOpenChatWithoutContact#readme",
+  "dependencies": {
+    "elm": "0.19.0-no-deps",
+    "uglify-js": "3.6.0"
+  }
+}
