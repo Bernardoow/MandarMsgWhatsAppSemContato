@@ -24,9 +24,9 @@ type alias Flags =
 
 init : Flags -> ( Model, Cmd Msg )
 init flags =
-    case Regex.fromStringWith { caseInsensitive = True, multiline = False } "/Android|webOS|iPhone|iPad|iPod|Opera Mini/" of
+    case Regex.fromStringWith { caseInsensitive = True, multiline = False } flags.userAgent of
         Just regex ->
-            if Regex.contains regex flags.userAgent then
+            if Regex.contains regex "/Android|webOS|iPhone|iPad|iPod|Opera Mini/" then
                 ( { mobileNumber = "55", typeDevice = Mobile }, Cmd.none )
             else
                 ( { mobileNumber = "55", typeDevice = Desktop }, Cmd.none )
