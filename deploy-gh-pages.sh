@@ -1,4 +1,4 @@
-git checkout -b gh-pages
+git checkout gh-pages
 git merge master
 cp -r website/. .
 git add .
